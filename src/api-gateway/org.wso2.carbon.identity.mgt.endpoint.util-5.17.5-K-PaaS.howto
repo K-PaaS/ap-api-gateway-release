@@ -25,9 +25,9 @@ vi src/main/java/org/wso2/carbon/identity/mgt/endpoint/util/IdentityManagementEn
 
         if (path.startsWith("/")) {
             ///////////////////////////////////////////////////////////////////////////////////////////////////
- 	    // added PaaS-TA
+ 	    // added K-PaaS
             ///////////////////////////////////////////////////////////////////////////////////////////////////
-            log.info("[PaaS-TA] serviceContextURL=" + serviceContextURL+ "= endpointUrl=" + endpointUrl +"=");
+            log.info("[K-PaaS] serviceContextURL=" + serviceContextURL+ "= endpointUrl=" + endpointUrl +"=");
             if (endpointUrl.lastIndexOf("/") == endpointUrl.length()-1 )
                 endpointUrl = endpointUrl.substring(0, endpointUrl.length()-1);
             ///////////////////////////////////////////////////////////////////////////////////////////////////

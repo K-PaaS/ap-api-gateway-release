@@ -1,5 +1,5 @@
 <%
-log_dir = '/var/vcap/sys/log/service-broker'
+log_dir = '/var/vcap/sys/log/ap-api-gateway-broker'
 %>
 
 server:
@@ -7,7 +7,7 @@ server:
 
 spring:
   application:
-    name: api-gateway-service-broker
+    name: ap-api-gateway-broker
   datasource:
     url: jdbc:mysql://<%= link('brokerdb_link').instances[0].address %>:<%= link('brokerdb_link').p('database.port') %>/<%= link('brokerdb_link').p('database.broker.schema_name') %>?zeroDateTimeBehavior=convertToNull&autoReconnect=true&useUnicode=true&characterEncoding=utf8
     username: <%= link('brokerdb_link').p('database.broker.username') %>
@@ -25,7 +25,7 @@ logging:
   file: <%= "#{log_dir}/apiGatewayBroker.log" %>
   level:
     root: <%= p('logging.level_root') %>
-    org.paasta.servicebroker.apigateway: <%= p('logging.level_broker') %>
+    org.servicebroker.apigateway: <%= p('logging.level_broker') %>
     org.hibernate: <%= p('logging.level_hibernate') %>
 
 service:
