@@ -1,0 +1,7 @@
+---
+name: ap-api-gateway-broker
+
+dependencies: []
+
+files:
+- ap-api-gateway-broker/ap-api-gateway-broker.jar

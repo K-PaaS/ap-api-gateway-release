@@ -48,10 +48,10 @@ alias =  "wso2carbon"
 key_password =  "wso2carbon"
 
 [keystore.primary]
-file_name =  "PaaS-TA.jks"
+file_name =  "K-PaaS.jks"
 type =  "JKS"
 password =  "<%= p('service.admin_password') %>"
-alias =  "PaaS-TA"
+alias =  "K-PaaS"
 key_password =  "<%= p('service.admin_password') %>"
 
 #[truststore]
@@ -237,7 +237,7 @@ allow_credentials = false
 #ciphers = ["SSL_RSA_WITH_RC4_128_MD5","SSL_RSA_WITH_RC4_128_SHA"]
 
 ################################################################################
-#PaaS-TA
+#K-PaaS
 ################################################################################
 #[transport.https.sslHostConfig.properties]
 #protocols="TLSv1.2"

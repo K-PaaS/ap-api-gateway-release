@@ -1,5 +1,0 @@
-set -e -x
-
-SRC_NAME="service-broker/paasta-api-gateway-service-broker.jar"
-
-cp -a ${SRC_NAME} ${BOSH_INSTALL_TARGET}

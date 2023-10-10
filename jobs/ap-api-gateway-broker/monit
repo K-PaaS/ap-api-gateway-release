@@ -1,0 +1,5 @@
+check process ap-api-gateway-broker
+  with pidfile /var/vcap/sys/run/ap-api-gateway-broker/ap-api-gateway-broker.pid
+  start program "/var/vcap/jobs/ap-api-gateway-broker/bin/service_ctl start" with timeout 30 seconds
+  stop program "/var/vcap/jobs/ap-api-gateway-broker/bin/service_ctl stop"
+  group vcap

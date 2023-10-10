@@ -1,7 +1,0 @@
----
-name: service-broker
-
-dependencies: []
-
-files:
-- service-broker/paasta-api-gateway-service-broker.jar
