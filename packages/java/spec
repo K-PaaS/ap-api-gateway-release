@@ -5,3 +5,4 @@ dependencies: []
 
 files:
 - java/OpenJDK8U-jre_x64_linux_hotspot_8u212b03.tar.gz
+- java/jce_policy-8.zip
