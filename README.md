@@ -79,7 +79,7 @@
 - Download & Copy "source files" into the src directory
     ```
     ## download source files
-    $ wget -O src.zip https://nextcloud.k-paas.org/index.php/s/sEBdFYpALHr8cKj/download
+    $ wget -O src.zip https://nextcloud.k-paas.org/index.php/s/sX8x5Yk26XBgP5n/download
     
     ## unzip download source files
     $ unzip src.zip
@@ -93,12 +93,13 @@
     │   ├── artifacts-1.5.7.zip
     │   ├── org.wso2.carbon.identity.mgt.endpoint.util-5.17.5-K-PaaS.howto
     │   ├── org.wso2.carbon.identity.mgt.endpoint.util-5.17.5-K-PaaS.jar
-    │   ├── wso2am-3.2.0-K-PaaS-v6.zip
+    │   ├── wso2am-3.2.0-K-PaaS-v7.zip
     │   └── wso2am-3.2.0.howto
     ├── common
     │   ├── pid_utils.sh
     │   └── syslog_utils.sh
     ├── java
+    │   ├── jce_policy-8.zip
     │   └── OpenJDK8U-jre_x64_linux_hotspot_8u212b03.tar.gz
     └── mariadb
         └── mariadb-10.5.17-linux-x86_64.tar.gz

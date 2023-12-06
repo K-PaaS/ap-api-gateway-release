@@ -22,6 +22,16 @@ fi
 echo "Extracting ARCHIVE"
 tar xzf ${ARCHIVE}
 
+#JCE Unlimited Strength Jurisdiction Policy
+mv jdk8u212-b03-jre/lib/security/policy/unlimited/US_export_policy.jar  jdk8u212-b03-jre/lib/security/policy/unlimited/US_export_policy.jar.backup
+mv jdk8u212-b03-jre/lib/security/policy/unlimited/local_policy.jar  jdk8u212-b03-jre/lib/security/policy/unlimited/local_policy.jar.backup
+mv jdk8u212-b03-jre/lib/security/policy/limited/US_export_policy.jar  jdk8u212-b03-jre/lib/security/policy/limited/US_export_policy.jar.backup
+mv jdk8u212-b03-jre/lib/security/policy/limited/local_policy.jar  jdk8u212-b03-jre/lib/security/policy/limited/local_policy.jar.backup
+
+unzip java/jce_policy-8.zip
+mv UnlimitedJCEPolicyJDK8/US_export_policy.jar  jdk8u212-b03-jre/lib/security
+mv UnlimitedJCEPolicyJDK8/local_policy.jar  jdk8u212-b03-jre/lib/security
+
 # COPY 
 if [[ -d ${PKG_NAME}/bin && `${PKG_NAME}/bin/java -version 2>&1` =~ "OpenJDK Runtime Environment" && $? == 0 ]]; then
   cp -a ${PKG_NAME}/* ${BOSH_INSTALL_TARGET}
