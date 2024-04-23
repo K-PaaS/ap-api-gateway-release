@@ -18,7 +18,7 @@
 - Download & Copy "source files" into the src directory
     ```
     ## download source files
-    $ wget -O src.zip https://nextcloud.k-paas.org/index.php/s/sX8x5Yk26XBgP5n/download
+    $ wget -O src.zip https://nextcloud.k-paas.org/index.php/s/kCByx3TRGBeDs8L/download
     
     ## unzip download source files
     $ unzip src.zip
@@ -32,7 +32,7 @@
     │   ├── artifacts-1.5.7.zip
     │   ├── org.wso2.carbon.identity.mgt.endpoint.util-5.17.5-K-PaaS.howto
     │   ├── org.wso2.carbon.identity.mgt.endpoint.util-5.17.5-K-PaaS.jar
-    │   ├── wso2am-3.2.0-K-PaaS-v7.zip
+    │   ├── wso2am-3.2.0-K-PaaS-v8.zip
     │   └── wso2am-3.2.0.howto
     ├── common
     │   ├── pid_utils.sh
